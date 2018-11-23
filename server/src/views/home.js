@@ -7,7 +7,9 @@ export default (props) => {
     console.log(content);
     return `
         <html>
-        <head></head>
+        <head>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        </head>
         <body>
             <div id="root">${content}</div>
             <script>

@@ -147,7 +147,7 @@ exports.default = function (props) {
 
     var content = (0, _server.renderToString)(_react2.default.createElement(_Home2.default, { toDoData: props }));
     console.log(content);
-    return '\n        <html>\n        <head></head>\n        <body>\n            <div id="root">' + content + '</div>\n            <script>\n                window.__PRELOADED_STATE__ = ' + JSON.stringify(props).replace(/</g, '\\u003c') + '\n            </script>\n            <script src="bundle.js"></script>\n            \n        </body>\n        </html>\n     ';
+    return '\n        <html>\n        <head>\n        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">\n        </head>\n        <body>\n            <div id="root">' + content + '</div>\n            <script>\n                window.__PRELOADED_STATE__ = ' + JSON.stringify(props).replace(/</g, '\\u003c') + '\n            </script>\n            <script src="bundle.js"></script>\n            \n        </body>\n        </html>\n     ';
 };
 
 /***/ }),
